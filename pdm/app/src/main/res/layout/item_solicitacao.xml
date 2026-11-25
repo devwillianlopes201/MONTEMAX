@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/borda_card">
+
+    <TextView
+        android:id="@+id/tvProfissional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_profissional"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvTipoServico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_tipo_servico"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnConfirmarServico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_confirmar_conclusao"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnAvaliarProfissional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_avaliar_profissional"
+        android:visibility="gone"/>
+
+</LinearLayout>

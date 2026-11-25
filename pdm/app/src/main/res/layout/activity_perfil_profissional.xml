@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_perfil_profissional"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="24dp"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/sivFotoPerfil"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/str_foto_perfil"
+                android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:id="@+id/tvNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_nome"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_email"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/tvWhatsapp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_whatsapp"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/tvDescricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descrição"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/tvAreaAtuacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_area_atuacao"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/tvServicos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Serviços oferecidos"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/tvCidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_cidade"
+                android:textSize="16sp"
+                android:layout_marginBottom="24dp"/>
+
+            <Button
+                android:id="@+id/btnWhatsApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_conversar_whatsapp"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnRegistrarServico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_registrar_servico"
+                android:layout_marginBottom="32dp"/>
+
+            <!-- Seção de avaliações -->
+
+            <TextView
+                android:id="@+id/tvTituloAvaliacoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_avaliacoes_clientes"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/tvMediaAvaliacoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0,0"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <RatingBar
+                android:id="@+id/ratingMedia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="0.1"
+                android:isIndicator="true"
+                android:rating="0"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvQuantidadeAvaliacoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_nenhuma_avaliacao"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvAvaliacoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

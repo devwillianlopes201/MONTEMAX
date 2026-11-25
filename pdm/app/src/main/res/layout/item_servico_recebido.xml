@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/borda_card">
+
+    <TextView
+        android:id="@+id/tvCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_cliente"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvTipoServico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_tipo_servico"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"/>
+
+    <LinearLayout
+        android:id="@+id/layoutBotoesSolicitacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnAprovarSolicitacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aprovar"/>
+
+        <Button
+            android:id="@+id/btnRecusarSolicitacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recusar"/>
+
+        <Button
+            android:id="@+id/btnIniciarServico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar serviço"/>
+
+        <Button
+            android:id="@+id/btnConcluirServico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Informar conclusão"/>
+
+    </LinearLayout>
+
+</LinearLayout>

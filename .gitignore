@@ -1,0 +1,23 @@
+# Credenciais PHP
+/config/conexao.php
+
+# Credenciais Java
+/JAVA/src/connection/Conexao.java
+/JAVA/src/br/com/montemaxadmin/GerarHashSenha.java
+
+# Arquivos compilados Java
+/JAVA/build/
+
+# Configurações privadas NetBeans
+/JAVA/nbproject/private/
+
+# Arquivos temporários
+*.log
+*.tmp
+
+# Configurações locais
+.vscode/
+.idea/
+
+# Configuração privada do e-mail
+montemax-email.properties

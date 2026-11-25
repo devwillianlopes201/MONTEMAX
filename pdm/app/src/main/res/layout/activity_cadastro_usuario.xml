@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Título da tela -->
+            <TextView
+                android:id="@+id/tvUsuarioTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_cadastro_usuario_titulo"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Nome -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/str_nome_cadastro_obrigatorio"
+                app:helperText="Exemplo: João da Silva"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_marginBottom="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tieNome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/str_nome_cadastro_obrigatorio"
+                    android:maxLength="120"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- E-mail -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/str_email_cadastro_obrigatorio"
+                app:helperText="Exemplo: joao@email.com"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_marginBottom="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tieEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/str_email_cadastro_obrigatorio"
+                    android:maxLength="120"
+                    android:inputType="textEmailAddress"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Tipo de usuário -->
+            <Spinner
+                android:id="@+id/spTipoUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Senha -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/str_senha_cadastro_obrigatorio"
+                app:helperText="Use letras, números e caracteres especiais (até 20 caracteres)."
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_marginBottom="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tieSenha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/str_senha_cadastro_obrigatorio"
+                    android:maxLength="20"
+                    android:inputType="textPassword"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%&amp;*()-_+=.,:;?"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Confirmação da senha -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilConfirmarSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/str_confirmar_senha_obrigatorio"
+                app:helperText="Digite novamente a senha informada acima."
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_marginBottom="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tieConfirmarSenha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/str_confirmar_senha_obrigatorio"
+                    android:maxLength="20"
+                    android:inputType="textPassword"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%&amp;*()-_+=.,:;?"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- WhatsApp -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilWhatsapp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/str_whatsapp_cadastro_obrigatorio"
+                app:helperText="Exemplo: (21) 99999-9999"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tieWhatsapp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/str_whatsapp_cadastro_obrigatorio"
+                    android:maxLength="20"
+                    android:inputType="phone"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Descrição profissional -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilDescricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/str_descricao_cadastro_obrigatorio"
+                app:helperText="Exemplo: Trabalho com montagem e desmontagem de móveis."
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tieDescricao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/str_descricao_cadastro_obrigatorio"
+                    android:minLines="3"
+                    android:maxLength="500"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Áreas de atuação -->
+            <TextView
+                android:id="@+id/tvAreaAtuacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_area_atuacao"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/cbQuarto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_quarto"
+                android:layout_marginBottom="4dp"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/cbCozinha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_cozinha"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone"/>
+
+            <!-- Serviços oferecidos -->
+            <TextView
+                android:id="@+id/tvServicos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Serviços oferecidos"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/cbMontagem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Montagem de móveis"
+                android:layout_marginBottom="4dp"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/cbDesmontagem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Desmontagem de móveis"
+                android:layout_marginBottom="4dp"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/cbTransporte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Transporte de móveis"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone"/>
+
+            <!-- Cidade -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilCidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/str_cidade_cadastro_obrigatorio"
+                app:helperText="Exemplo: Rio de Janeiro"
+                android:layout_marginBottom="16dp"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tieCidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/str_cidade_cadastro_obrigatorio"
+                    android:maxLength="100"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Documento de identificação -->
+            <TextView
+                android:id="@+id/tvDocumentoTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Documento de identificação"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tvDocumentoDescricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Envie fotos legíveis da frente e do verso do seu RG para análise da equipe MonteMax."
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp"
+                android:visibility="gone"/>
+
+            <!-- Frente do RG -->
+            <TextView
+                android:id="@+id/tvFrenteRG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Frente do RG"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/ivDocumentoFrente"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="fitCenter"
+                android:background="?attr/colorSurfaceVariant"
+                android:contentDescription="Prévia da frente do RG"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btnSelecionarDocumentoFrente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selecionar frente do RG"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tvDocumentoFrenteSelecionado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nenhuma imagem da frente selecionada."
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone"/>
+
+            <!-- Verso do RG -->
+            <TextView
+                android:id="@+id/tvVersoRG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verso do RG"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/ivDocumentoVerso"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="fitCenter"
+                android:background="?attr/colorSurfaceVariant"
+                android:contentDescription="Prévia do verso do RG"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btnSelecionarDocumentoVerso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selecionar verso do RG"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tvDocumentoVersoSelecionado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nenhuma imagem do verso selecionada."
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone"/>
+
+            <!-- Concluir cadastro -->
+            <Button
+                android:id="@+id/btnCadastrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_cadastrar"
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

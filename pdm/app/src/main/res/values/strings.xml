@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Montemax</string>
+    <string name="str_bem_vindo">Bem-Vindo ao MonteMax!</string>
+    <string name="str_entre_conta">Entre na sua conta</string>
+    <string name="str_email">E-mail:</string>
+    <string name="str_senha">Senha:</string>
+    <string name="str_esqueci_senha">Esqueci minha senha</string>
+    <string name="str_entrar">ENTRAR</string>
+    <string name="str_criar_conta">Não tem cadastro? Cadastre-se aqui</string>
+    <string name="str_logo">Logo do MonteMax</string>
+
+    <string name="str_email_obrigatorio">Informe o e-mail</string>
+    <string name="str_senha_obrigatorio">Informe a senha</string>
+    <string name="str_login_sucesso">Login realizado com sucesso!</string>
+
+    <string name="str_tipo_cadastro">Como você desejar se cadastrar?</string>
+    <string name="str_cadastro_usuario">Sou Usuário</string>
+    <string name="str_cadastro_profissional">Sou Profissional</string>
+    <string name="str_cadastro_usuario_titulo">Cadastro de Usuário</string>
+
+    <!-- Campos do cadastro sem asterisco -->
+    <string name="str_nome">Nome:</string>
+    <string name="str_email_cadastro">E-mail:</string>
+    <string name="str_senha_cadastro">Senha:</string>
+    <string name="str_confirmar_senha">Confirmar Senha:</string>
+    <string name="str_whatsapp">Whatsapp:</string>
+    <string name="str_descricao">Descrição:</string>
+    <string name="str_cidade">Cidade:</string>
+
+    <!-- Campos obrigatórios do cadastro -->
+    <string name="str_nome_cadastro_obrigatorio">Nome:*</string>
+    <string name="str_email_cadastro_obrigatorio">E-mail:*</string>
+    <string name="str_senha_cadastro_obrigatorio">Senha:*</string>
+    <string name="str_confirmar_senha_obrigatorio">Confirmar Senha:*</string>
+    <string name="str_whatsapp_cadastro_obrigatorio">Whatsapp:*</string>
+    <string name="str_descricao_cadastro_obrigatorio">Descrição:*</string>
+    <string name="str_cidade_cadastro_obrigatorio">Cidade:*</string>
+
+    <string name="str_cadastrar">Cadastrar</string>
+    <string name="str_nome_obrigatorio">Informe o nome</string>
+    <string name="str_senhas_diferentes">As senhas devem ser iguais</string>
+    <string name="str_cadastro_profissional_titulo">Cadasttro de Profissional</string>
+
+    <string name="str_whatsapp_obrigatorio">Informe o Whatsapp</string>
+    <string name="str_descricao_obrigatorio">Informe a descrição</string>
+    <string name="str_cidade_obrigatorio">Informe a cidade</string>
+
+    <string name="str_titulo_principal">MonteMax</string>
+    <string name="str_saudacao_principal">Olá! Seja bem-vindo ao MonteMax.</string>
+    <string name="str_perfil">Meu Perfil</string>
+    <string name="str_comunidade">Comunidade</string>
+    <string name="str_localizacao">Minha Localização</string>
+    <string name="str_localizacao_mensagem">Sua localização aparecerá aqui.</string>
+    <string name="str_obter_localizacao">Obter localização</string>
+    <string name="str_foto_perfil">Foto de Perfil</string>
+    <string name="str_editar_perfil">Editar Perfil</string>
+    <string name="str_nova_publicacao">Nova Publicação</string>
+    <string name="str_midia_publicacao">Mídia da publicação</string>
+    <string name="str_curtir">Curtir</string>
+    <string name="str_comentarios">Comentários</string>
+    <string name="str_titulo_publicacao">Título</string>
+    <string name="str_conteudo_publicacao">Conteúdo</string>
+    <string name="str_publicar">PUBLICAR</string>
+    <string name="str_titulo_obrigatorio">Informe o título</string>
+    <string name="str_conteudo_obrigatorio">Informe o conteúdo</string>
+    <string name="str_publicacao_sucesso">Publicação realizada com sucesso!</string>
+    <string name="str_selecionar_foto">Selecionar Foto</string>
+    <string name="str_excluir">Excluir</string>
+    <string name="str_editar">Editar publicação</string>
+    <string name="str_excluir_conta_titulo">Excluir conta</string>
+    <string name="str_excluir_conta_mensagem">Tem certeza que deseja excluir sua conta?</string>
+    <string name="str_excluir_conta_sucesso">Conta excluída com sucesso!</string>
+    <string name="str_cancelar">Cancelar</string>
+    <string name="str_minhas_solicitacoes">Minhas Solicitações</string>
+    <string name="str_minhas_publicacoes">Minhas Publicações</string>
+    <string name="str_solicitacoes_recebidas">Solicitações Recebidas</string>
+    <string name="str_perfil_atualizado">Perfil atualizado com sucesso!</string>
+    <string name="str_salvar_alteracoes">Salvar Alterações</string>
+    <string name="str_area_atuacao">Área de atuação</string>
+    <string name="str_quarto">Quarto</string>
+    <string name="str_cozinha">Cozinha</string>
+    <string name="str_selecionar_foto_perfil">Selecionar Foto de Perfil</string>
+    <string name="str_areas_atuacao_obrigatorio">Selecione pelo menos uma área de atuação</string>
+    <string name="str_buscar_profissionais">Buscar Profissionais</string>
+    <string name="str_perfil_profissional">Perfil do Profissional</string>
+    <string name="str_solicitar_servico">Solicitar Serviço</string>
+    <string name="str_tipo_servico">Tipo de serviço</string>
+    <string name="str_tipo_movel">Tipo de móvel</string>
+    <string name="str_endereco">Endereço do serviço</string>
+    <string name="str_observacoes">Descreva o serviço ou informe observações</string>
+    <string name="str_enviar_solicitacao">ENVIAR SOLICITAÇÃO</string>
+    <string name="str_area_movel">Ambiente do móvel</string>
+    <string name="str_area_movel_obrigatoria">Selecione o ambiente do móvel</string>
+    <string name="str_tipo_movel_obrigatorio">Informe o tipo de móvel</string>
+    <string name="str_endereco_obrigatorio">Informe o endereço do serviço</string>
+    <string name="str_solicitacao_preenchida">Dados da solicitação preenchidos com sucesso!</string>
+    <string name="str_profissional_nao_encontrado">Profissional não encontrado.</string>
+    <string name="str_conversar_whatsapp">Conversar pelo WhatsApp</string>
+    <string name="str_whatsapp_indisponivel">Não foi possível abrir o WhatsApp.</string>
+    <string name="str_sem_publicacoes">Você ainda não possui publicações.</string>
+    <string name="str_editar_publicacao">Editar publicação</string>
+    <string name="str_editar_publicacao_sucesso">Publicação atualizada com sucesso!</string>
+    <string name="str_escrever_comentario">Escreva seu comentário</string>
+    <string name="str_publicar_comentario">Publicar comentário</string>
+    <string name="str_comentario_obrigatorio">Digite um comentário</string>
+    <string name="str_comentario_sucesso">Comentário publicado com sucesso!</string>
+    <string name="str_registrar_servico">Registrar serviço combinado</string>
+    <string name="str_descricao_solicitacao">Descreva o serviço combinado</string>
+    <string name="str_confirmar_registro">Registrar serviço</string>
+    <string name="str_profissional">Profissional</string>
+    <string name="str_servico_obrigatorio">Selecione um serviço.</string>
+    <string name="str_descricao_obrigatoria">Descreva o serviço combinado.</string>
+    <string name="str_registro_sucesso">Serviço registrado com sucesso!</string>
+    <string name="str_nenhuma_solicitacao">Você ainda não possui serviços registrados.</string>
+    <string name="str_servicos_recebidos">Serviços Recebidos</string>
+    <string name="str_nenhum_servico_recebido">Você ainda não recebeu serviços.</string>
+    <string name="str_cliente">Cliente</string>
+    <string name="str_informar_conclusao">Informar conclusão</string>
+    <string name="str_servico_aguardando_confirmacao">Conclusão informada! Agora o cliente precisa confirmar o serviço.</string>
+    <string name="str_confirmar_conclusao">Confirmar conclusão do serviço</string>
+    <string name="str_conclusao_confirmada">Serviço concluído com sucesso!</string>
+    <string name="str_avaliar_profissional">Avaliar profissional</string>
+    <string name="str_titulo_avaliacao">Avaliar profissional</string>
+    <string name="str_profissional_avaliado">Profissional avaliado:</string>
+    <string name="str_nota_avaliacao">Como você avalia o serviço?</string>
+    <string name="str_comentario_avaliacao">Deixe seu comentário (opcional)</string>
+    <string name="str_enviar_avaliacao">Enviar avaliação</string>
+    <string name="str_nota_obrigatoria">Selecione uma nota de 1 a 5 estrelas.</string>
+    <string name="str_avaliacao_recebida">Avaliação recebida com sucesso!</string>
+    <string name="str_avaliacao_ja_realizada">Você já avaliou este profissional.</string>
+    <string name="str_avaliacoes_clientes">Avaliações dos clientes</string>
+    <string name="str_nenhuma_avaliacao">Ainda não existem avaliações.</string>
+    <string name="str_quantidade_avaliacoes">%1$d avaliações</string>
+    <string name="str_sair_conta">Sair da conta</string>
+
+</resources>

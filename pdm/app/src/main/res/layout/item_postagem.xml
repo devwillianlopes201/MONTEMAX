@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Identificação do autor da publicação -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/ivFotoAutor"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/str_foto_perfil"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground"/>
+
+        <TextView
+            android:id="@+id/tvNomeAutor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <!-- Título da publicação -->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_titulo_principal"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Conteúdo da publicação -->
+    <TextView
+        android:id="@+id/tvConteudo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_descricao"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Data da publicação -->
+    <TextView
+        android:id="@+id/tvDataPublicacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Área horizontal para exibir todas as fotos -->
+    <HorizontalScrollView
+        android:id="@+id/scrollFotosPublicacao"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="16dp"
+        android:scrollbars="none"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/layoutFotosPublicacao"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"/>
+
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/btnComentarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_comentarios"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_editar"
+        android:visibility="gone"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnExcluir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_excluir"
+        android:visibility="gone"/>
+
+</LinearLayout>

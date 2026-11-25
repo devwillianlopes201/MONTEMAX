@@ -1,0 +1,520 @@
+/* Remove margens padrão e define a fonte principal da página. */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #001b33;
+}
+
+/* Mantém os títulos com destaque visual. */
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+/* Remove o sublinhado padrão dos links. */
+a {
+    text-decoration: none;
+}
+
+/* Define o fundo e o espaçamento do cabeçalho. */
+.cabecalho {
+    background-color: #001b33;
+    border-bottom: 1px solid #173b5c;
+}
+
+/* Define o tamanho da logo do MonteMax. */
+.logo-montemax {
+    width: 170px;
+    height: auto;
+}
+
+/* Organiza os links do menu. */
+.cabecalho nav {
+    display: flex;
+    gap: 25px;
+}
+
+/* Define a aparência dos links do menu. */
+.cabecalho nav a {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Muda a cor do link quando o mouse passa por cima. */
+.cabecalho nav a:hover {
+    color: #f28c28;
+}
+
+/* Define o botão Entrar. */
+.botao-entrar {
+    background-color: #f28c28;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+/* Muda levemente a cor do botão ao passar o mouse. */
+.botao-entrar:hover {
+    background-color: #d97618;
+    color: #ffffff;
+}
+
+/* Define o tamanho da área do carrossel. */
+.carrossel-montemax {
+    width: 100%;
+}
+
+/* Define a altura das imagens do carrossel. */
+.imagem-carrossel {
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Cria uma área escura sobre a imagem para facilitar a leitura do texto. */
+.carousel-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+/* Mantém o texto do carrossel acima da imagem e da camada escura. */
+.carousel-caption {
+    z-index: 2;
+}
+
+/* Define o tamanho dos títulos do carrossel. */
+.carousel-caption h2 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+/* Destaca algumas palavras com a cor laranja do MonteMax. */
+.carousel-caption h2 span {
+    color: #f28c28;
+}
+
+/* Define o tamanho do texto explicativo. */
+.carousel-caption p {
+    font-size: 18px;
+}
+
+/* Define o espaçamento e o fundo da seção de apresentação. */
+.sobre-montemax {
+    padding: 70px 20px;
+    background-color: #001b33;
+}
+
+/* Define o destaque do título da seção. */
+.sobre-montemax h2 {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Define o tamanho e a largura do texto. */
+.sobre-montemax p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+/* Define o espaçamento e o fundo da seção de recursos. */
+.recursos-montemax {
+    padding: 70px 20px;
+    background-color: #001b33;
+}
+
+/* Define o destaque do título da seção de recursos. */
+.recursos-montemax h2 {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 45px;
+}
+
+/* Organiza o conteúdo de cada recurso. */
+.recursos-montemax .col-md-4 {
+    padding: 25px;
+}
+
+/* Define a aparência dos títulos dos recursos. */
+.recursos-montemax h3 {
+    color: #f28c28;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Define a aparência dos textos dos recursos. */
+.recursos-montemax p {
+    line-height: 1.6;
+    margin-bottom: 0;
+    color: #ffffff;
+}
+
+/* Define o tamanho e o espaçamento dos ícones dos recursos. */
+.icone-recurso {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+/* Define o fundo da área de cadastro. */
+.cadastro-montemax {
+    padding: 70px 20px;
+    background-color: #001b33;
+}
+
+/* Define o destaque do título. */
+.cadastro-montemax h2 {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* Define o texto da área de cadastro. */
+.cadastro-montemax p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+/* Organiza os dois botões lado a lado. */
+.botoes-cadastro {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Define a aparência dos botões de cadastro. */
+.botao-cadastro {
+    background-color: #f28c28;
+    color: #ffffff;
+    padding: 13px 25px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+/* Muda a cor do botão quando o mouse passa por cima. */
+.botao-cadastro:hover {
+    background-color: #d97618;
+    color: #ffffff;
+}
+
+/* Define a aparência do rodapé do MonteMax. */
+.rodape {
+    padding: 20px;
+    background-color: #001326;
+    color: #ffffff;
+    text-align: center;
+    border-top: 1px solid #173b5c;
+}
+
+/* Remove a margem padrão do texto do rodapé. */
+.rodape p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Ajusta o site para telas menores, como celulares. */
+@media (max-width: 768px) {
+
+    /* Organiza o cabeçalho em telas menores. */
+    .cabecalho .d-flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Permite que o menu ocupe mais de uma linha no celular. */
+    .cabecalho nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Reduz o tamanho da logo no celular. */
+    .logo-montemax {
+        width: 140px;
+    }
+
+    /* Reduz a altura das imagens do carrossel. */
+    .imagem-carrossel {
+        height: 350px;
+    }
+
+    /* Reduz o tamanho do título do carrossel. */
+    .carousel-caption h2 {
+        font-size: 28px;
+    }
+
+    /* Reduz o tamanho do texto do carrossel. */
+    .carousel-caption p {
+        font-size: 15px;
+    }
+
+    /* Reduz o espaço das seções no celular. */
+    .sobre-montemax,
+    .recursos-montemax,
+    .cadastro-montemax {
+        padding: 50px 20px;
+    }
+
+    /* Reduz os títulos das seções. */
+    .sobre-montemax h2,
+    .recursos-montemax h2,
+    .cadastro-montemax h2 {
+        font-size: 28px;
+    }
+}
+
+/* Define o espaço da página de perfil. */
+.perfil-container {
+    min-height: 70vh;
+    padding: 70px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Define a aparência do cartão do perfil. */
+.perfil-card {
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    background-color: #002642;
+    border: 1px solid #173b5c;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Define o título do perfil. */
+.perfil-card h1 {
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+/* Destaca o nome do usuário. */
+.perfil-card h2 {
+    color: #f28c28;
+    margin-bottom: 15px;
+}
+
+/* Define os textos do perfil. */
+.perfil-card p {
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+/* Define a aparência da foto de perfil. */
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #f28c28;
+}
+
+/* Define a aparência do nome do usuário logado. */
+.nome-usuario {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Destaca o nome ao passar o mouse. */
+.nome-usuario:hover {
+    color: #f28c28;
+}
+
+/* Fundo da página de cadastro. */
+.pagina-cadastro {
+    min-height: 100vh;
+    background-color: #001b33;
+    padding: 40px 20px;
+}
+
+/* Área da logo. */
+.logo-cadastro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Tamanho da logo. */
+.logo-cadastro img {
+    width: 180px;
+    max-width: 100%;
+}
+
+/* Card do formulário. */
+.card-cadastro {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #002642;
+    border: 1px solid #173b5c;
+    border-radius: 12px;
+}
+
+/* Título do formulário. */
+.card-cadastro h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+/* Labels dos campos. */
+.card-cadastro label {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Campos do formulário.
+   Inclui input, textarea e o novo select. */
+.card-cadastro input,
+.card-cadastro textarea,
+.card-cadastro select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #52718d;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Campo selecionado. */
+.card-cadastro input:focus,
+.card-cadastro textarea:focus,
+.card-cadastro select:focus {
+    outline: none;
+    border-color: #f28c28;
+    box-shadow: 0 0 0 2px rgba(242, 140, 40, 0.2);
+}
+
+/* Opções do campo de seleção. */
+.card-cadastro select option {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Botão cadastrar. */
+.botao-cadastro-form {
+    width: 100%;
+    border: none;
+    background-color: #f28c28;
+    color: #ffffff;
+    padding: 13px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Efeito ao passar o mouse. */
+.botao-cadastro-form:hover {
+    background-color: #d97618;
+}
+
+/* Mensagem de erro. */
+.mensagem-erro {
+    background-color: #5c1f1f;
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Mensagem de sucesso. */
+.mensagem-sucesso {
+    background-color: #1f5c3a;
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Link para voltar ao login. */
+.voltar-login {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    color: #ffffff;
+}
+
+/* Efeito do link. */
+.voltar-login:hover {
+    color: #f28c28;
+}
+
+/* Ajustes para celular. */
+@media (max-width: 576px) {
+
+    .card-cadastro {
+        padding: 30px 20px;
+    }
+
+    .card-cadastro h1 {
+        font-size: 26px;
+    }
+}
+
+/* Botão para voltar à página inicial. */
+.botao-voltar-inicio {
+    display: block;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #f28c28;
+    padding: 11px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.2s;
+    margin-top: 15px;
+}
+
+/* Efeito ao passar o mouse. */
+.botao-voltar-inicio:hover {
+    background-color: #f28c28;
+    color: #ffffff;
+}
+
+/* Ajuste para telas menores. */
+@media (max-width: 576px) {
+    .botao-voltar-inicio {
+        width: 100%;
+    }
+}
+
+/* Organiza os botões do perfil na vertical. */
+.botoes-perfil {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+/* Faz os botões ocuparem toda a largura disponível. */
+.botoes-perfil a {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 600;
+}

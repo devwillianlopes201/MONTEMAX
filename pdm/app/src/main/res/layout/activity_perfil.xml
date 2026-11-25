@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_perfil"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="24dp"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/sivFotoPerfil"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/str_foto_perfil"
+                android:layout_marginBottom="24dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"/>
+
+            <TextView
+                android:id="@+id/tvAlterarFoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Toque na foto para alterar"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:textColor="?attr/colorPrimary"
+                android:layout_marginTop="-16dp"
+                android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:id="@+id/tvNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_nome"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_email"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/tvWhatsapp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_whatsapp"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvDescricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_area_atuacao"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvDescricaoProfissional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descrição profissional"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvServicos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Serviços oferecidos"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvCidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_cidade"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/tvLocalizacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_localizacao"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btnMinhasPublicacoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_minhas_publicacoes"
+                android:visibility="gone"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnMinhasSolicitacoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_minhas_solicitacoes"
+                android:visibility="gone"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnEditarPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_editar_perfil"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnExcluirPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_excluir"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnSairConta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_sair_conta"
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
